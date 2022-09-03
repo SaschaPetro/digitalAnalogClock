@@ -17,10 +17,6 @@ function logTime() {
   min.innerText = " " + minutes + " : ";
   sec.innerText = " " + second;
 }
-function formatNumberString(n) {
-  let s = "0" + n.toString();
-  return s.slice(-2);
-}
 
 /* Analoge Uhr */
 /* Konstante für jeden (Stunde, Minute, Sekunde)  zeiger */
@@ -60,5 +56,3 @@ nach Sekunde an der richtigen Stelle.*/
 }
 
 setInterval(setDate, 1000);
-updateTime();
-setDate();
